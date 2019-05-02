@@ -1,0 +1,193 @@
+{
+  "window.nativeFullScreen": true,
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.tabSize": 4,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 200,
+  "editor.formatOnSave": true,
+  "editor.suggestFontSize": 13,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontWeight": "500",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": false,
+  "debug.console.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontWeightBold": "500",
+  "terminal.integrated.fontSize": 14,
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": true,
+  "latex-workshop.latex.tools": [
+    {
+      "command": "lualatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ],
+      "name": "Step 1: lualatex"
+    },
+    {
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ],
+      "name": "Step 2: bibtex"
+    },
+    {
+      "command": "lualatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "name": "Step 3: lualatex"
+    },
+    {
+      "command": "lualatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "name": "Step 4: lualatex"
+    },
+    {
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ],
+      "name": "Step 1: pdflatex"
+    },
+    {
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "name": "Step 3: pdflatex"
+    },
+    {
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "name": "Step 4: pdflatex"
+    },
+    {
+      "command": "biber",
+      "args": [
+        "%DOCFILE%"
+      ],
+      "name": "Step 2: biber"
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "[2b] lualatex->bibtex->lualatex*2",
+      "tools": [
+        "Step 1: lualatex",
+        "Step 2: bibtex",
+        "Step 3: lualatex",
+        "Step 4: lualatex"
+      ]
+    },
+    {
+      "name": "[2a] lualatex->biber->lualatex*2",
+      "tools": [
+        "Step 1: lualatex",
+        "Step 2: biber",
+        "Step 3: lualatex",
+        "Step 4: lualatex"
+      ]
+    },
+    {
+      "name": "[1a] pdflatex->biber->pdflatex*2",
+      "tools": [
+        "Step 1: pdflatex",
+        "Step 2: biber",
+        "Step 3: pdflatex",
+        "Step 4: pdflatex"
+      ]
+    },
+    {
+      "name": "[1b] pdflatex->bibtex->pdflatex*2",
+      "tools": [
+        "Step 1: pdflatex",
+        "Step 2: bibtex",
+        "Step 3: pdflatex",
+        "Step 4: pdflatex"
+      ]
+    },
+    {
+      "name": "[3] pdflatex",
+      "tools": [
+        "Step 1: pdflatex",
+      ]
+    },
+    {
+      "name": "[4] lualatex",
+      "tools": [
+        "Step 1: lualatex",
+      ]
+    }
+  ],
+  "latex-workshop.view.pdf.hand": true,
+  "latex-workshop.view.pdf.viewer": "browser",
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "python.pythonPath": "/Users/ladino/anaconda3/bin/python",
+  "python.jediEnabled": false,
+  "python.linting.pylintEnabled": true,
+  "python.terminal.executeInFileDir": true,
+  "julia.enableTelemetry": true,
+  "sync.gist": "4cc2b5c114e0606c1864ca42b366178f",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.forceDownload": false,
+  "xmlTools.xmlFormatterImplementation": "v2",
+  "cmake.configureOnOpen": false,
+  "window.zoomLevel": 0,
+  "git.autofetch": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.editor.showTabs": true,
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "workbench.iconTheme": "vscode-icons",
+  "autoDocstring.docstringFormat": "sphinx",
+  "editor.fontSize": 13
+}
