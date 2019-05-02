@@ -9,6 +9,7 @@
   "editor.wordWrapColumn": 200,
   "editor.formatOnSave": true,
   "editor.suggestFontSize": 13,
+  "editor.fontSize": 13,
   "editor.fontFamily": "Source Code Pro",
   "editor.fontWeight": "500",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -189,5 +190,9 @@
   "kite.showWelcomeNotificationOnStartup": false,
   "workbench.iconTheme": "vscode-icons",
   "autoDocstring.docstringFormat": "sphinx",
-  "editor.fontSize": 13
+  "code-runner.executorMap": {
+    "python": "$pythonPath -u $fullFileName",
+  },
+  "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true
 }
