@@ -11,6 +11,9 @@
   "editor.tabSize": 4,
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 120,
+  "editor.rulers": [
+    120,
+  ],
   "editor.formatOnSave": true,
   "editor.suggestFontSize": 14,
   "editor.fontSize": 14,
@@ -19,11 +22,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.minimap.enabled": false,
-  "editor.renderFinalNewline": true,
   "editor.renderIndentGuides": true,
-  "editor.rulers": [
-    120,
-  ],
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "zenMode.centerLayout": false,
@@ -35,6 +34,7 @@
   "terminal.integrated.fontWeightBold": "500",
   "terminal.integrated.fontSize": 14,
   "explorer.confirmDelete": false,
+  "explorer.autoReveal": false,
   "breadcrumbs.enabled": true,
   "git.autofetch": true,
   "gitlens.advanced.messages": {
