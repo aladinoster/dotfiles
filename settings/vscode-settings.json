@@ -1,26 +1,54 @@
 {
   "window.nativeFullScreen": true,
+  "window.restoreFullscreen": true,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "vscode-icons",
   "editor.tabSize": 4,
   "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 200,
+  "editor.wordWrapColumn": 120,
   "editor.formatOnSave": true,
-  "editor.suggestFontSize": 13,
-  "editor.fontSize": 13,
+  "editor.suggestFontSize": 14,
+  "editor.fontSize": 14,
   "editor.fontFamily": "Source Code Pro",
   "editor.fontWeight": "500",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.minimap.enabled": false,
+  "editor.renderFinalNewline": true,
+  "editor.renderIndentGuides": true,
+  "editor.rulers": [
+    120,
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": true,
+  "zenMode.hideTabs": false,
   "debug.console.fontFamily": "Source Code Pro",
+  "debug.console.fontSize": 14,
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontWeightBold": "500",
   "terminal.integrated.fontSize": 14,
   "explorer.confirmDelete": false,
   "breadcrumbs.enabled": true,
+  "git.autofetch": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
   "latex-workshop.latex.tools": [
     {
       "command": "lualatex",
@@ -101,21 +129,15 @@
   ],
   "latex-workshop.latex.recipes": [
     {
-      "name": "[2b] lualatex->bibtex->lualatex*2",
+      "name": "[1] pdflatex",
       "tools": [
-        "Step 1: lualatex",
-        "Step 2: bibtex",
-        "Step 3: lualatex",
-        "Step 4: lualatex"
+        "Step 1: pdflatex",
       ]
     },
     {
-      "name": "[2a] lualatex->biber->lualatex*2",
+      "name": "[2] lualatex",
       "tools": [
         "Step 1: lualatex",
-        "Step 2: biber",
-        "Step 3: lualatex",
-        "Step 4: lualatex"
       ]
     },
     {
@@ -128,7 +150,25 @@
       ]
     },
     {
-      "name": "[1b] pdflatex->bibtex->pdflatex*2",
+      "name": "[2a] lualatex->biber->lualatex*2",
+      "tools": [
+        "Step 1: lualatex",
+        "Step 2: biber",
+        "Step 3: lualatex",
+        "Step 4: lualatex"
+      ]
+    },
+    {
+      "name": "[1b] lualatex->bibtex->lualatex*2",
+      "tools": [
+        "Step 1: lualatex",
+        "Step 2: bibtex",
+        "Step 3: lualatex",
+        "Step 4: lualatex"
+      ]
+    },
+    {
+      "name": "[2b] pdflatex->bibtex->pdflatex*2",
       "tools": [
         "Step 1: pdflatex",
         "Step 2: bibtex",
@@ -136,40 +176,19 @@
         "Step 4: pdflatex"
       ]
     },
-    {
-      "name": "[3] pdflatex",
-      "tools": [
-        "Step 1: pdflatex",
-      ]
-    },
-    {
-      "name": "[4] lualatex",
-      "tools": [
-        "Step 1: lualatex",
-      ]
-    }
   ],
   "latex-workshop.view.pdf.hand": true,
   "latex-workshop.view.pdf.viewer": "browser",
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "python.pythonPath": "/Users/ladino/anaconda3/bin/python",
   "python.jediEnabled": false,
   "python.linting.pylintEnabled": true,
   "python.terminal.executeInFileDir": true,
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "autoDocstring.docstringFormat": "sphinx",
   "julia.enableTelemetry": true,
   "sync.gist": "4cc2b5c114e0606c1864ca42b366178f",
   "sync.quietSync": false,
@@ -181,26 +200,9 @@
   "sync.forceDownload": false,
   "xmlTools.xmlFormatterImplementation": "v2",
   "cmake.configureOnOpen": false,
-  "window.zoomLevel": 0,
-  "git.autofetch": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.editor.showTabs": true,
-  "python.dataScience.sendSelectionToInteractiveWindow": true,
-  "kite.showWelcomeNotificationOnStartup": false,
-  "workbench.iconTheme": "vscode-icons",
-  "autoDocstring.docstringFormat": "sphinx",
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName",
   },
   "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
-  "window.restoreFullscreen": true,
-  "zenMode.centerLayout": false,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "editor.renderFinalNewline": true,
-  "editor.renderIndentGuides": true,
-  "editor.rulers": [
-    120
 }
