@@ -194,5 +194,9 @@
     "python": "$pythonPath -u $fullFileName",
   },
   "code-runner.showExecutionMessage": false,
-  "code-runner.clearPreviousOutput": true
+  "code-runner.clearPreviousOutput": true,
+  "window.restoreFullscreen": true,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false
 }
