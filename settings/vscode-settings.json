@@ -198,5 +198,9 @@
   "window.restoreFullscreen": true,
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "editor.renderFinalNewline": true,
+  "editor.renderIndentGuides": true,
+  "editor.rulers": [
+    120
 }
