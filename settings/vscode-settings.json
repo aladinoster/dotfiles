@@ -1,13 +1,21 @@
 {
+  // Window 
   "window.nativeFullScreen": true,
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true,
+  // Workbench 
+  "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.colorTheme": "One Dark Pro",
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
+  "workbench.settings.editor": "json",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#0059ff8a"
+  },
+  // Editor settings 
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.tabSize": 4,
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 120,
@@ -28,16 +36,19 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": true,
-  "zenMode.hideTabs": false,
+  "zenMode.hideTabs": true,
+  // Debugging 
   "debug.console.fontFamily": "Source Code Pro",
   "debug.console.fontSize": 14,
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontWeightBold": "500",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.showExitAlert": false,
   "explorer.confirmDelete": false,
   "explorer.autoReveal": false,
   "breadcrumbs.enabled": true,
   "git.autofetch": true,
+  // Extensions 
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -206,4 +217,8 @@
   },
   "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
+  "cSpell.userWords": [
+    "biber",
+    "pdflatex"
+  ],
 }
