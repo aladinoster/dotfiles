@@ -3,6 +3,9 @@
   "window.nativeFullScreen": true,
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
+  // File management
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1500,
   // Workbench 
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
