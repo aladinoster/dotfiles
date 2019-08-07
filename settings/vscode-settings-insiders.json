@@ -1,0 +1,310 @@
+{
+    // General Settings VS Code
+    // Window 
+    "window.newWindowDimensions": "fullscreen",
+    "window.restoreFullscreen": true,
+    "window.zoomLevel": 0,
+    "window.closeWhenEmpty": true,
+    // File management
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1500,
+    "files.trimFinalNewlines": true,
+    // Workbench 
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.colorTheme": "Solarized Dark+",
+    "workbench.editor.showTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.editor": "json",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 8,
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#077bf73e",
+        "contrastActiveBorder": "#fffb0050",
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.list.openMode": "singleClick",
+    // Editor settings 
+    "editor.fontLigatures": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorWidth": 3,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [
+        120,
+    ],
+    "editor.formatOnSave": true,
+    "editor.suggestFontSize": 14,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Monaco",
+    "editor.fontWeight": "500",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderFinalNewline": true,
+    "editor.renderIndentGuides": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // Zen Mode
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": true,
+    "zenMode.hideTabs": true,
+    // Debugging 
+    "debug.console.fontFamily": "Source Code Pro",
+    "debug.console.fontSize": 14,
+    "debug.toolBarLocation": "floating",
+    // Terminal
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "terminal.integrated.fontWeightBold": "600",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.showExitAlert": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.rendererType": "auto",
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.autoReveal": false,
+    "explorer.decorations.badges": false,
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolPath": "on",
+    "breadcrumbs.symbolSortOrder": "type",
+    //Git
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.autoStash": true,
+    "git.showPushSuccessNotification": true,
+    // Problems 
+    "problems.decorations.enabled": true,
+    // Extensions 
+    // CMake
+    "cmake.configureOnOpen": false,
+    // Code Runner
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "python": "$pythonPath -u $fullFileName",
+    },
+    "code-runner.showExecutionMessage": false,
+    "code-runner.clearPreviousOutput": true,
+    // CSpell
+    "cSpell.enabledLanguageIds": [
+        "latex",
+        "markdown"
+    ],
+    "cSpell.userWords": [
+        "biber",
+        "pdflatex"
+    ],
+    // Git Lens
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    // Julia
+    "julia.enableTelemetry": true,
+    // LaTeX
+    "latex-workshop.latex.tools": [
+        {
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ],
+            "name": "Step 1: lualatex"
+        },
+        {
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "name": "Step 2: bibtex"
+        },
+        {
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 3: lualatex"
+        },
+        {
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 4: lualatex"
+        },
+        {
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ],
+            "name": "Step 1: pdflatex"
+        },
+        {
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 3: pdflatex"
+        },
+        {
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 4: pdflatex"
+        },
+        {
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "name": "Step 2: biber"
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "[1] pdflatex",
+            "tools": [
+                "Step 1: pdflatex",
+            ]
+        },
+        {
+            "name": "[2] lualatex",
+            "tools": [
+                "Step 1: lualatex",
+            ]
+        },
+        {
+            "name": "[1a] pdflatex->biber->pdflatex*2",
+            "tools": [
+                "Step 1: pdflatex",
+                "Step 2: biber",
+                "Step 3: pdflatex",
+                "Step 4: pdflatex"
+            ]
+        },
+        {
+            "name": "[2a] lualatex->biber->lualatex*2",
+            "tools": [
+                "Step 1: lualatex",
+                "Step 2: biber",
+                "Step 3: lualatex",
+                "Step 4: lualatex"
+            ]
+        },
+        {
+            "name": "[1b] lualatex->bibtex->lualatex*2",
+            "tools": [
+                "Step 1: lualatex",
+                "Step 2: bibtex",
+                "Step 3: lualatex",
+                "Step 4: lualatex"
+            ]
+        },
+        {
+            "name": "[2b] pdflatex->bibtex->pdflatex*2",
+            "tools": [
+                "Step 1: pdflatex",
+                "Step 2: bibtex",
+                "Step 3: pdflatex",
+                "Step 4: pdflatex"
+            ]
+        },
+    ],
+    "latex-workshop.view.pdf.hand": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    // Python 
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "100"
+    ],
+    "python.pythonPath": "/Users/ladino/anaconda3/bin/python",
+    "python.jediEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.terminal.executeInFileDir": true,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    // Kite
+    "kite.showWelcomeNotificationOnStartup": false,
+    // AutoDocString
+    "autoDocstring.docstringFormat": "sphinx",
+    // Sync 
+    "sync.gist": "1323b130f6b30c6e5185fca064d3bcf3",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "sync.forceUpload": true,
+    // Todohighlight 
+    "todohighlight.isEnable": true,
+    "todohighlight.include": [
+        "*.py",
+    ],
+    "todohighlight.keywords": [
+        {
+            "text": "REVIEW",
+            "color": "white",
+            "backgroundColor": "green",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "NOTE:",
+            "color": "white",
+            "backgroundColor": "orange",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "TODO:",
+            "color": "white",
+            "backgroundColor": "#045de4",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            //other styling properties goes here ... 
+        }
+    ],
+    // XML
+    "xmlTools.xmlFormatterImplementation": "v2",
+    // Insiders 
+    "python.insidersChannel": "weekly",
+}

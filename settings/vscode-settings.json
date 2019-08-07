@@ -1,24 +1,31 @@
 {
+  // General Settings VS Code 
   // Window 
   "window.newWindowDimensions": "fullscreen",
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
+  "window.closeWhenEmpty": true,
   // File management
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1500,
+  "files.trimFinalNewlines": true,
   // Workbench 
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Material Theme High Contrast",
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.settings.editor": "json",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#0059ff8a"
-  },
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 8,
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#000000b9",
+    "contrastActiveBorder": "#fffb0050",
+  },
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.list.openMode": "singleClick",
   // Editor settings 
   "editor.fontLigatures": true,
   "editor.cursorSmoothCaretAnimation": true,
@@ -37,11 +44,11 @@
   "editor.fontWeight": "500",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
   "editor.renderFinalNewline": true,
   "editor.renderIndentGuides": true,
   "editor.suggestSelection": "first",
-  "editor.minimap.enabled": true,
-  "editor.minimap.renderCharacters": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Zen Mode
   "zenMode.fullScreen": false,
@@ -49,21 +56,54 @@
   "zenMode.hideLineNumbers": true,
   "zenMode.hideTabs": true,
   // Debugging 
-  "debug.console.fontFamily": "Monaco",
+  "debug.console.fontFamily": "Source Code Pro",
   "debug.console.fontSize": 14,
-  "debug.toolBarLocation": "docked",
-  // terminal 
+  "debug.toolBarLocation": "floating",
+  // Terminal 
   "terminal.integrated.fontFamily": "Source Code Pro",
-  "terminal.integrated.fontWeightBold": "500",
+  "terminal.integrated.fontWeightBold": "600",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.showExitAlert": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.rendererType": "auto",
+  // Explorer 
   "explorer.confirmDelete": false,
   "explorer.autoReveal": false,
+  "explorer.decorations.badges": false,
   "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "on",
+  "breadcrumbs.symbolSortOrder": "type",
+  // Git
   "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.autoStash": true,
+  "git.showPushSuccessNotification": true,
   // Problems
-  "problems.decorations.enabled": false,
+  "problems.decorations.enabled": true,
   // Extensions 
+  // CMake
+  "cmake.configureOnOpen": false,
+  // Code Runner 
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "python": "$pythonPath -u $fullFileName",
+  },
+  "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true,
+  // CSpell
+  "cSpell.enabledLanguageIds": [
+    "latex",
+    "markdown"
+  ],
+  "cSpell.userWords": [
+    "biber",
+    "pdflatex"
+  ],
+  // Git Lens
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -76,6 +116,9 @@
   },
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
+  // Julia
+  "julia.enableTelemetry": true,
+  // LaTeX
   "latex-workshop.latex.tools": [
     {
       "command": "lualatex",
@@ -205,10 +248,11 @@
     },
   ],
   "latex-workshop.view.pdf.hand": true,
-  "latex-workshop.view.pdf.viewer": "browser",
+  "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  // Python
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": [
     "--line-length",
@@ -219,9 +263,11 @@
   "python.linting.pylintEnabled": true,
   "python.terminal.executeInFileDir": true,
   "python.dataScience.sendSelectionToInteractiveWindow": true,
+  // Kite 
   "kite.showWelcomeNotificationOnStartup": false,
+  // AutoDocstring
   "autoDocstring.docstringFormat": "sphinx",
-  "julia.enableTelemetry": true,
+  // Sync 
   "sync.gist": "e5620dda4cd515810af865f057bbbe47",
   "sync.quietSync": false,
   "sync.askGistName": false,
@@ -230,21 +276,8 @@
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.forceDownload": false,
-  "xmlTools.xmlFormatterImplementation": "v2",
-  "cmake.configureOnOpen": false,
-  "code-runner.executorMap": {
-    "python": "$pythonPath -u $fullFileName",
-  },
-  "code-runner.showExecutionMessage": false,
-  "code-runner.clearPreviousOutput": true,
-  "cSpell.enabledLanguageIds": [
-    "latex",
-    "markdown"
-  ],
-  "cSpell.userWords": [
-    "biber",
-    "pdflatex"
-  ],
+  "sync.forceUpload": true,
+  // Todohighlight
   "todohighlight.isEnable": true,
   "todohighlight.include": [
     "*.py",
@@ -270,4 +303,6 @@
       //other styling properties goes here ... 
     }
   ],
+  // XML
+  "xmlTools.xmlFormatterImplementation": "v2",
 }
