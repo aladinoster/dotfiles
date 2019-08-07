@@ -88,6 +88,7 @@
   // CMake
   "cmake.configureOnOpen": false,
   // Code Runner 
+  "code-runner.showRunIconInEditorTitleMenu": false,
   "code-runner.executorMap": {
     "javascript": "node",
     "python": "$pythonPath -u $fullFileName",
