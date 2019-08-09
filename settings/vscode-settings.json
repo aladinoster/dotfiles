@@ -9,6 +9,9 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1500,
   "files.trimFinalNewlines": true,
+  "files.hotExit": "onExitAndWindowClose",
+  //Explorer 
+  "explorer.openEditors.visible": 0,
   // Workbench 
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
@@ -40,8 +43,8 @@
   "editor.formatOnSave": true,
   "editor.suggestFontSize": 14,
   "editor.fontSize": 14,
-  "editor.fontFamily": "Monaco",
-  "editor.fontWeight": "500",
+  "editor.fontFamily": "Fira Code, Monaco",
+  "editor.fontWeight": "400",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.minimap.enabled": true,
@@ -56,11 +59,11 @@
   "zenMode.hideLineNumbers": true,
   "zenMode.hideTabs": true,
   // Debugging 
-  "debug.console.fontFamily": "Source Code Pro",
+  "debug.console.fontFamily": "Hasklig, Source Code Pro",
   "debug.console.fontSize": 14,
   "debug.toolBarLocation": "floating",
   // Terminal 
-  "terminal.integrated.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontFamily": "Hasklig, Source Code Pro",
   "terminal.integrated.fontWeightBold": "600",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.showExitAlert": false,
