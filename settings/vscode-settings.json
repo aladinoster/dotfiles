@@ -25,6 +25,7 @@
   "workbench.colorCustomizations": {
     "tab.activeBackground": "#000000b9",
     "contrastActiveBorder": "#fffb0050",
+    "inputOption.activeBackground": "#3375eebd",
   },
   "workbench.editor.tabSizing": "shrink",
   "workbench.panel.defaultLocation": "bottom",
@@ -46,7 +47,7 @@
   "editor.fontFamily": "Fira Code, Monaco",
   "editor.fontWeight": "400",
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "selection",
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderFinalNewline": true,
