@@ -282,14 +282,14 @@
   "sync.autoUpload": false,
   "sync.forceDownload": false,
   "sync.forceUpload": true,
-  // Todohighlight
-  "todohighlight.isEnable": true,
+  // Todohighlight 
+  "todohighlight.isEnable": false,
   "todohighlight.include": [
     "*.py",
   ],
   "todohighlight.keywords": [
     {
-      "text": "REVIEW",
+      "text": "REVIEW:",
       "color": "white",
       "backgroundColor": "green",
       "overviewRulerColor": "grey"
@@ -304,10 +304,45 @@
       "text": "TODO:",
       "color": "white",
       "backgroundColor": "#045de4",
-      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
-      //other styling properties goes here ... 
+      "borderRadius": "2px"
+    },
+    {
+      "text": "FIXME:",
+      "color": "white",
+      "borderRadius": "2px"
     }
   ],
+  // TodoTree
+  "todo-tree.tags": [
+    "TODO:",
+    "FIXME:",
+    "REVIEW:",
+    "NOTE:",
+  ],
+  "todo-tree.customHighlight": {
+    "TODO:": {
+      "icon": "checklist",
+      "foreground": "#045de4",
+      "type": "line"
+    },
+    "FIXME:": {
+      "icon": "issue-opened",
+      "foreground": "#ec80f0c4",
+      "type": "line"
+    },
+    "REVIEW:": {
+      "icon": "eye",
+      "foreground": "green",
+      "type": "line"
+    },
+    "NOTE:": {
+      "icon": "note",
+      "foreground": "orange",
+      "type": "line"
+    }
+  },
+  "todo-tree.grouped": true,
+  "todo-tree.showCountsInTree": true,
   // XML
   "xmlTools.xmlFormatterImplementation": "v2",
 }
