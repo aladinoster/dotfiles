@@ -76,7 +76,7 @@
   // Explorer 
   "explorer.confirmDelete": false,
   "explorer.autoReveal": false,
-  "explorer.decorations.badges": false,
+  "explorer.decorations.badges": true,
   "breadcrumbs.enabled": true,
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
