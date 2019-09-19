@@ -314,13 +314,13 @@
         }
     ],
     // Todo Tree
-    "todo-tree.tags": [
+    "todo-tree.general.tags": [
         "TODO:",
         "FIXME:",
         "REVIEW:",
         "NOTE:",
     ],
-    "todo-tree.customHighlight": {
+    "todo-tree.highlights.customHighlight": {
         "TODO:": {
             "icon": "checklist",
             "foreground": "#045de4",
@@ -342,8 +342,8 @@
             "type": "line"
         }
     },
-    "todo-tree.grouped": true,
-    "todo-tree.showCountsInTree": true,
+    "todo-tree.tree.grouped": true,
+    "todo-tree.tree.showCountsInTree": true,
     // XML
     "xmlTools.xmlFormatterImplementation": "v2",
     // Insiders 
