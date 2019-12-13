@@ -26,11 +26,13 @@
     "tab.activeBackground": "#000000b9",
     "contrastActiveBorder": "#fffb0050",
     "inputOption.activeBackground": "#3375eebd",
+    "activityBar.activeBackground": "#295c8a",
   },
   "workbench.editor.tabSizing": "shrink",
   "workbench.panel.defaultLocation": "bottom",
   "workbench.list.openMode": "singleClick",
   // Editor settings 
+  "editor.autoIndent": "full",
   "editor.fontLigatures": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorBlinking": "expand",
@@ -59,10 +61,11 @@
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": true,
   "zenMode.hideTabs": true,
+  "zenMode.silentNotifications": true,
   // Debugging 
   "debug.console.fontFamily": "Hasklig, Source Code Pro",
   "debug.console.fontSize": 14,
-  "debug.toolBarLocation": "floating",
+  "debug.toolBarLocation": "docked",
   // Terminal 
   "terminal.integrated.fontFamily": "Hasklig, Source Code Pro",
   "terminal.integrated.fontWeightBold": "600",
@@ -72,15 +75,39 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.rendererType": "auto",
+  "terminal.integrated.rendererType": "experimentalWebgl",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.minimumContrastRatio": 4.5,
   // Explorer 
   "explorer.confirmDelete": false,
   "explorer.autoReveal": false,
-  "explorer.decorations.badges": true,
+  "explorer.decorations.badges": false,
   "breadcrumbs.enabled": true,
+  "explorer.compactFolders": true,
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
   "breadcrumbs.symbolSortOrder": "type",
+  "[python]": {
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [
+      80,
+    ],
+  },
+  "[latex]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
   // Git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
@@ -99,6 +126,8 @@
   },
   "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
+  // C++
+  "C_Cpp.updateChannel": "Insiders",
   // CSpell
   "cSpell.enabledLanguageIds": [
     "latex",
@@ -261,13 +290,15 @@
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": [
     "--line-length",
-    "100"
+    "80"
   ],
   "python.pythonPath": "/Users/ladino/anaconda3/bin/python",
   "python.jediEnabled": false,
   "python.linting.pylintEnabled": true,
   "python.terminal.executeInFileDir": true,
   "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "python.dataScience.askForKernelRestart": false,
+  "python.dataScience.useNotebookEditor": false,
   // Kite 
   "kite.showWelcomeNotificationOnStartup": false,
   // AutoDocstring
@@ -313,13 +344,13 @@
     }
   ],
   // TodoTree
-  "todo-tree.tags": [
+  "todo-tree.general.tags": [
     "TODO:",
     "FIXME:",
     "REVIEW:",
     "NOTE:",
   ],
-  "todo-tree.customHighlight": {
+  "todo-tree.highlights.customHighlight": {
     "TODO:": {
       "icon": "checklist",
       "foreground": "#045de4",
@@ -341,8 +372,8 @@
       "type": "line"
     }
   },
-  "todo-tree.grouped": true,
-  "todo-tree.showCountsInTree": true,
+  "todo-tree.tree.grouped": true,
+  "todo-tree.tree.showCountsInTree": true,
   // XML
   "xmlTools.xmlFormatterImplementation": "v2",
 }
