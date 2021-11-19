@@ -13,16 +13,24 @@ brew install git
 brew install gh 
 
 # Extra tools 
-brew install ffmpeg
-brew install mactex
 brew install hugo 
-brew install docker 
-brew install docker-compose
-
-# Media tools 
-brew cask install spotify
 
 # Casks 
+bres install --cask spotify
+brew install --cask docker
+brew install --cask mactex
 brew install --cask julia
 brew install --cask visual-studio-code
+brew install --cask miniconda
+brew install --cask obsidian
+brew install --cask zotero
+brew install --cask notion
+brew install --cask slack
+brew install --cask gifox
+brew install --cask ipe
+brew install --cask selfcontrol
+brew install --cask typora
 brew install --cask font-source-code-pro
+
+# Extras 
+# brew install --cask vlc
