@@ -10,7 +10,8 @@ brew install htop
 
 # Version control 
 brew install git
-brew install gh 
+brew install gh
+brew install git-flow
 
 # Extra tools 
 brew install hugo 
