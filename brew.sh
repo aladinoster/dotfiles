@@ -32,9 +32,11 @@ brew install --cask ipe
 brew install --cask selfcontrol
 brew install --cask typora
 brew install --cask font-source-code-pro
-brew install --cask inkscape
-brew install --cask gimp
 brew install --cask dropbox
 
 # Extras 
 # brew install --cask vlc
+# brew install --cask inkscape
+# brew install --cask gimp
+# brew install --cask blender
+
