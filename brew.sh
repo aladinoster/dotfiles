@@ -7,6 +7,7 @@ brew install zsh-git-prompt
 brew install zsh-syntax-highlighting
 brew install tree
 brew install htop
+brew install tmux
 
 # Version control 
 brew install git
@@ -30,7 +31,7 @@ brew install --cask slack
 brew install --cask gifox
 brew install --cask ipe
 brew install --cask selfcontrol
-brew install --cask typora
+# brew install --cask typora
 brew install --cask font-source-code-pro
 brew install --cask dropbox
 
