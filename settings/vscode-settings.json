@@ -1,379 +1,394 @@
 {
-  // General Settings VS Code 
-  // Window 
-  "window.newWindowDimensions": "fullscreen",
-  "window.restoreFullscreen": true,
-  "window.zoomLevel": 0,
-  "window.closeWhenEmpty": true,
-  // File management
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1500,
-  "files.trimFinalNewlines": true,
-  "files.hotExit": "onExitAndWindowClose",
-  //Explorer 
-  "explorer.openEditors.visible": 0,
-  // Workbench 
-  "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": true,
-  "workbench.editor.closeEmptyGroups": false,
-  "workbench.colorTheme": "Material Theme High Contrast",
-  "workbench.editor.showTabs": true,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.settings.editor": "json",
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.tree.indent": 8,
-  "workbench.colorCustomizations": {
-    "tab.activeBackground": "#000000b9",
-    "contrastActiveBorder": "#fffb0050",
-    "inputOption.activeBackground": "#3375eebd",
-    "activityBar.activeBackground": "#295c8a",
-  },
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.panel.defaultLocation": "bottom",
-  "workbench.list.openMode": "singleClick",
-  // Editor settings 
-  "editor.autoIndent": "full",
-  "editor.fontLigatures": true,
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorWidth": 3,
-  "editor.tabSize": 4,
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 120,
-  "editor.rulers": [
-    120,
-  ],
-  "editor.formatOnSave": true,
-  "editor.suggestFontSize": 14,
-  "editor.fontSize": 14,
-  "editor.fontFamily": "Fira Code, Monaco",
-  "editor.fontWeight": "400",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "selection",
-  "editor.minimap.enabled": true,
-  "editor.minimap.renderCharacters": false,
-  "editor.renderFinalNewline": true,
-  "editor.renderIndentGuides": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  // Zen Mode
-  "zenMode.fullScreen": false,
-  "zenMode.centerLayout": false,
-  "zenMode.hideLineNumbers": true,
-  "zenMode.hideTabs": true,
-  "zenMode.silentNotifications": true,
-  // Debugging 
-  "debug.console.fontFamily": "Hasklig, Source Code Pro",
-  "debug.console.fontSize": 14,
-  "debug.toolBarLocation": "docked",
-  // Terminal 
-  "terminal.integrated.fontFamily": "Hasklig, Source Code Pro",
-  "terminal.integrated.fontWeightBold": "600",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.showExitAlert": false,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.rendererType": "experimentalWebgl",
-  "terminal.integrated.inheritEnv": false,
-  "terminal.integrated.minimumContrastRatio": 4.5,
-  // Explorer 
-  "explorer.confirmDelete": false,
-  "explorer.autoReveal": false,
-  "explorer.decorations.badges": false,
-  "breadcrumbs.enabled": true,
-  "explorer.compactFolders": true,
-  "breadcrumbs.filePath": "on",
-  "breadcrumbs.symbolPath": "on",
-  "breadcrumbs.symbolSortOrder": "type",
-  "[python]": {
-    "editor.wordWrapColumn": 80,
+    // General Settings VS Code
+    // Window
+    "window.newWindowDimensions": "fullscreen",
+    "window.restoreFullscreen": true,
+    "window.closeWhenEmpty": true,
+    // File management
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1500,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.hotExit": "onExitAndWindowClose",
+    //Explorer
+    "explorer.openEditors.visible": 0,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.editor": "json",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 8,
+    "workbench.colorCustomizations": {
+        "contrastActiveBorder": "#fffb0050",
+        "inputOption.activeBackground": "#3375eebd",
+        "activityBar.activeBackground": "#295c8a",
+        "debugConsole.sourceForeground": "#ffffff",
+        "[Material Theme Palenight High Contrast]": {}
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.list.openMode": "singleClick",
+    // Local history
+    "workbench.localHistory.enabled": true,
+    // Editor settings
+    "editor.autoIndent": "full",
+    "editor.fontLigatures": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorWidth": 3,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
     "editor.rulers": [
-      80,
+        120,
     ],
-  },
-  "[latex]": {
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
-    "editor.suggestSelection": "recentlyUsedByPrefix",
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2
-  },
-  "[markdown]": {
-    "editor.wordWrap": "on",
-    "editor.quickSuggestions": false,
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2
-  },
-  // Git
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "git.autoStash": true,
-  "git.showPushSuccessNotification": true,
-  // Problems
-  "problems.decorations.enabled": true,
-  // Extensions 
-  // CMake
-  "cmake.configureOnOpen": false,
-  // Code Runner 
-  "code-runner.showRunIconInEditorTitleMenu": false,
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "python": "$pythonPath -u $fullFileName",
-  },
-  "code-runner.showExecutionMessage": false,
-  "code-runner.clearPreviousOutput": true,
-  // C++
-  "C_Cpp.updateChannel": "Insiders",
-  // CSpell
-  "cSpell.enabledLanguageIds": [
-    "latex",
-    "markdown"
-  ],
-  "cSpell.userWords": [
-    "biber",
-    "pdflatex"
-  ],
-  // Git Lens
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
-  // Julia
-  "julia.enableTelemetry": true,
-  // LaTeX
-  "latex-workshop.latex.tools": [
-    {
-      "command": "lualatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-pdf",
-        "%DOC%"
-      ],
-      "name": "Step 1: lualatex"
+    "editor.formatOnSave": true,
+    "editor.suggestFontSize": 14,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Fira Code, Monaco",
+    "editor.fontWeight": "400",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderFinalNewline": "on",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.largeFileOptimizations": false,
+    "editor.lineNumbers": "relative",
+    // Zen Mode
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": true,
+    "zenMode.silentNotifications": true,
+    // Debugging
+    "debug.console.fontFamily": "default",
+    "debug.console.fontSize": 14,
+    "debug.toolBarLocation": "docked",
+    // Terminal
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.fontWeightBold": "200",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.showExitAlert": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.rendererType": "auto",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.minimumContrastRatio": 4.5,
+    // scm
+    "scm.alwaysShowRepositories": true,
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.autoReveal": false,
+    "explorer.decorations.badges": false,
+    "breadcrumbs.enabled": true,
+    "explorer.compactFolders": true,
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolPath": "on",
+    "breadcrumbs.symbolSortOrder": "type",
+    "[python]": {
+        "editor.wordWrapColumn": 80,
+        "editor.rulers": [
+            80,
+        ],
+        "editor.formatOnType": true,
     },
-    {
-      "command": "bibtex",
-      "args": [
-        "%DOCFILE%"
-      ],
-      "name": "Step 2: bibtex"
+    // ssh
+    // "remote.SSH.useLocalServer": true,
+    // "remote.SSH.lockfilesInTmp": true,
+    // "remote.SSH.useFlock":false,
+    // latex
+    "[latex]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
     },
-    {
-      "command": "lualatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ],
-      "name": "Step 3: lualatex"
+    "[markdown]": {
+        "editor.wordWrap": "bounded",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
     },
-    {
-      "command": "lualatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ],
-      "name": "Step 4: lualatex"
+    "[jupyter]": {
+        "editor.colorDecorators": true,
     },
-    {
-      "command": "pdflatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-pdf",
-        "%DOC%"
-      ],
-      "name": "Step 1: pdflatex"
+    // Git
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.autoStash": true,
+    "git.showPushSuccessNotification": true,
+    // Problems
+    "problems.decorations.enabled": true,
+    // Extensions
+    // CMake
+    "cmake.configureOnOpen": false,
+    // Code Runner
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "python": "$pythonPath -u $fullFileName",
     },
-    {
-      "command": "pdflatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ],
-      "name": "Step 3: pdflatex"
+    "code-runner.showExecutionMessage": false,
+    "code-runner.clearPreviousOutput": true,
+    // C++
+    "C_Cpp.updateChannel": "Insiders",
+    // CSpell
+    "cSpell.enableFiletypes": [
+        "latex",
+        "markdown",
+        "!python"
+    ],
+    "cSpell.userWords": [
+        "biber",
+        "pdflatex"
+    ],
+    // Git Lens
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
     },
-    {
-      "command": "pdflatex",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "%DOC%"
-      ],
-      "name": "Step 4: pdflatex"
+    // Julia
+    // LaTeX
+    "latex-workshop.latex.tools": [
+        {
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ],
+            "name": "Step 1: lualatex"
+        },
+        {
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "name": "Step 2: bibtex"
+        },
+        {
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 3: lualatex"
+        },
+        {
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 4: lualatex"
+        },
+        {
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ],
+            "name": "Step 1: pdflatex"
+        },
+        {
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 3: pdflatex"
+        },
+        {
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "name": "Step 4: pdflatex"
+        },
+        {
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "name": "Step 2: biber"
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "[1] pdflatex",
+            "tools": [
+                "Step 1: pdflatex",
+            ]
+        },
+        {
+            "name": "[2] lualatex",
+            "tools": [
+                "Step 1: lualatex",
+            ]
+        },
+        {
+            "name": "[1a] pdflatex->biber->pdflatex*2",
+            "tools": [
+                "Step 1: pdflatex",
+                "Step 2: biber",
+                "Step 3: pdflatex",
+                "Step 4: pdflatex"
+            ]
+        },
+        {
+            "name": "[2a] lualatex->biber->lualatex*2",
+            "tools": [
+                "Step 1: lualatex",
+                "Step 2: biber",
+                "Step 3: lualatex",
+                "Step 4: lualatex"
+            ]
+        },
+        {
+            "name": "[1b] lualatex->bibtex->lualatex*2",
+            "tools": [
+                "Step 1: lualatex",
+                "Step 2: bibtex",
+                "Step 3: lualatex",
+                "Step 4: lualatex"
+            ]
+        },
+        {
+            "name": "[2b] pdflatex->bibtex->pdflatex*2",
+            "tools": [
+                "Step 1: pdflatex",
+                "Step 2: bibtex",
+                "Step 3: pdflatex",
+                "Step 4: pdflatex"
+            ]
+        },
+    ],
+    "latex-workshop.view.pdf.hand": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    // Python
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "80"
+    ],
+    "python.pythonPath": "/Users/andresladino/anaconda3/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [],
+    "python.terminal.executeInFileDir": false,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    // AutoDocstring
+    "autoDocstring.docstringFormat": "google",
+    // TodoTree
+    "todo-tree.general.tags": [
+        "TODO:",
+        "FIXME:",
+        "REVIEW:",
+        "NOTE:",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "TODO:": {
+            "icon": "checklist",
+            "foreground": "#045de4",
+            "type": "line"
+        },
+        "FIXME:": {
+            "icon": "issue-opened",
+            "foreground": "#ec80f0c4",
+            "type": "line"
+        },
+        "REVIEW:": {
+            "icon": "eye",
+            "foreground": "green",
+            "type": "line"
+        },
+        "NOTE:": {
+            "icon": "note",
+            "foreground": "orange",
+            "type": "line"
+        }
     },
-    {
-      "command": "biber",
-      "args": [
-        "%DOCFILE%"
-      ],
-      "name": "Step 2: biber"
-    }
-  ],
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "[1] pdflatex",
-      "tools": [
-        "Step 1: pdflatex",
-      ]
+    "todo-tree.tree.showCountsInTree": true,
+    // XML
+    "xmlTools.xmlFormatterImplementation": "v2",
+    "git.confirmSync": false,
+    "http.proxySupport": "off",
+    "jupyter.askForKernelRestart": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
     },
-    {
-      "name": "[2] lualatex",
-      "tools": [
-        "Step 1: lualatex",
-      ]
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "julia.enableTelemetry": true,
+    "python.defaultInterpreterPath": "/Users/andresladino/opt/anaconda3/bin/python",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
     },
-    {
-      "name": "[1a] pdflatex->biber->pdflatex*2",
-      "tools": [
-        "Step 1: pdflatex",
-        "Step 2: biber",
-        "Step 3: pdflatex",
-        "Step 4: pdflatex"
-      ]
-    },
-    {
-      "name": "[2a] lualatex->biber->lualatex*2",
-      "tools": [
-        "Step 1: lualatex",
-        "Step 2: biber",
-        "Step 3: lualatex",
-        "Step 4: lualatex"
-      ]
-    },
-    {
-      "name": "[1b] lualatex->bibtex->lualatex*2",
-      "tools": [
-        "Step 1: lualatex",
-        "Step 2: bibtex",
-        "Step 3: lualatex",
-        "Step 4: lualatex"
-      ]
-    },
-    {
-      "name": "[2b] pdflatex->bibtex->pdflatex*2",
-      "tools": [
-        "Step 1: pdflatex",
-        "Step 2: bibtex",
-        "Step 3: pdflatex",
-        "Step 4: pdflatex"
-      ]
-    },
-  ],
-  "latex-workshop.view.pdf.hand": true,
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
-  // Python
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "80"
-  ],
-  "python.pythonPath": "/Users/ladino/anaconda3/bin/python",
-  "python.jediEnabled": false,
-  "python.linting.pylintEnabled": true,
-  "python.terminal.executeInFileDir": true,
-  "python.dataScience.sendSelectionToInteractiveWindow": true,
-  "python.dataScience.askForKernelRestart": false,
-  "python.dataScience.useNotebookEditor": false,
-  // Kite 
-  "kite.showWelcomeNotificationOnStartup": false,
-  // AutoDocstring
-  "autoDocstring.docstringFormat": "sphinx",
-  // Sync 
-  "sync.gist": "e5620dda4cd515810af865f057bbbe47",
-  "sync.quietSync": false,
-  "sync.askGistName": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.forceDownload": false,
-  "sync.forceUpload": true,
-  // Todohighlight 
-  "todohighlight.isEnable": false,
-  "todohighlight.include": [
-    "*.py",
-  ],
-  "todohighlight.keywords": [
-    {
-      "text": "REVIEW:",
-      "color": "white",
-      "backgroundColor": "green",
-      "overviewRulerColor": "grey"
-    },
-    {
-      "text": "NOTE:",
-      "color": "white",
-      "backgroundColor": "orange",
-      "overviewRulerColor": "grey"
-    },
-    {
-      "text": "TODO:",
-      "color": "white",
-      "backgroundColor": "#045de4",
-      "borderRadius": "2px"
-    },
-    {
-      "text": "FIXME:",
-      "color": "white",
-      "borderRadius": "2px"
-    }
-  ],
-  // TodoTree
-  "todo-tree.general.tags": [
-    "TODO:",
-    "FIXME:",
-    "REVIEW:",
-    "NOTE:",
-  ],
-  "todo-tree.highlights.customHighlight": {
-    "TODO:": {
-      "icon": "checklist",
-      "foreground": "#045de4",
-      "type": "line"
-    },
-    "FIXME:": {
-      "icon": "issue-opened",
-      "foreground": "#ec80f0c4",
-      "type": "line"
-    },
-    "REVIEW:": {
-      "icon": "eye",
-      "foreground": "green",
-      "type": "line"
-    },
-    "NOTE:": {
-      "icon": "note",
-      "foreground": "orange",
-      "type": "line"
-    }
-  },
-  "todo-tree.tree.grouped": true,
-  "todo-tree.tree.showCountsInTree": true,
-  // XML
-  "xmlTools.xmlFormatterImplementation": "v2",
+    "redhat.telemetry.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        }
+    ],
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "pull:command"
+    ],
+    "julia.symbolCacheDownload": true,
+    "editor.accessibilitySupport": "off",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "githubPullRequests.fileListLayout": "flat",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "window.zoomLevel": -1,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "zenMode.showTabs": "single",
+    "workbench.activityBar.location": "top",
+    "vim.enableNeovim": true,
+    "vim.neovimUseConfigFile": true
 }
