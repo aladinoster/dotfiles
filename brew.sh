@@ -9,6 +9,10 @@ brew install tree
 brew install htop
 brew install tmux
 
+# Extras for rendering 
+# brew install ffmpeg
+# brew install mactex
+
 # Version control 
 brew install git
 brew install gh
