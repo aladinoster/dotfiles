@@ -8,6 +8,8 @@ brew install zsh-syntax-highlighting
 brew install tree
 brew install htop
 brew install tmux
+brew install fzf
+brew install bat
 
 # Extras for rendering 
 # brew install ffmpeg
