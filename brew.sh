@@ -10,6 +10,7 @@ brew install htop
 brew install tmux
 brew install fzf
 brew install bat
+brew install ripgrep 
 
 # Extras for rendering 
 # brew install ffmpeg
