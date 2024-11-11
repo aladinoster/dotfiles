@@ -12,7 +12,7 @@ brew install fzf
 brew install bat
 brew install ripgrep 
 
-# Extras for rendering 
+# Extras for video rendering 
 # brew install ffmpeg
 # brew install mactex
 
@@ -23,6 +23,10 @@ brew install git-flow
 
 # Extra tools 
 brew install hugo 
+
+# Font setup (terminal)
+brew install --cask font-hack-nerd-font
+brew install --cask font-fira-code-nerd-font
 
 # Casks 
 bres install --cask spotify
