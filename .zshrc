@@ -148,16 +148,13 @@ alias jn="jupyter notebook"
 alias jl="jupyter lab"
 alias g="git"
 
-# Github
-GITOVL=olp_214V7XiM32ZIFacs0KYcrgoPSdeUK11JfxsD
-export GITOVL
+# GitHub
+# Add Git Tokens 
 
 export PATH="$HOME/.cargo/env:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-
-# This loads nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # This are flag configurations in order to setup pyenv.
@@ -166,8 +163,29 @@ export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -
 export CPPFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix readline)/include -I$(brew --prefix zlib)/include -I$(brew --prefix tcl-tk)/include"
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig:$(brew --prefix readline)/lib/pkgconfig:$(brew --prefix zlib)/lib/pkgconfig:$(brew --prefix tcl-tk)/lib/pkgconfig"
 
+# PyEnv
 export PYENV_ROOT="$HOME/.pyenv" 
-
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# Rust
+. "$HOME/.cargo/env"
+
+# Configure Fzf
+# source <(fzf --zsh)
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias fnvim="nvim \$(fzf --preview 'cat {}' --height 40%)"
+export FZF_DEFAULT_OPTS="--color=fg:#ffffff,bg:#1e1e1e,hl:#dcdcaa,fg+:#dcdcaa,bg+:#333333,hl+:#dcdcaa $FZF_DEFAULT_OPTS"
+export FZF_DEFAULT_OPTS="--preview 'glow --style=dark {}' --preview-window=right:50%"
+# Define a function to find and change to a selected directory
+fcd() {
+  local dir
+  dir=$(find "${1:-.}" -type d -print 2> /dev/null | fzf)
+  if [[ -d "$dir" ]]; then
+    cd "$dir"
+  fi
+}
+
+# Define bat
+alias bat="batcat"
 
