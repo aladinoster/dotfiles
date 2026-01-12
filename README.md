@@ -41,6 +41,9 @@ Configuration files for macOS, following the XDG Base Directory specification.
 
     # Git
     ln -sf ~/dotfiles/.config/git ~/.config/git
+
+    # Neovim
+    ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
     ```
 
 4.  **Finalize:**
