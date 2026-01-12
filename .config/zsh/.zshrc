@@ -14,6 +14,10 @@ ZSH_THEME="robbyrussell"
 # Recommended: git, tmux, fzf, gh (github cli)
 plugins=(git tmux fzf gh)
 
+# Tmux Plugin Options (Must be set before sourcing OMZ)
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=true
+
 # Init Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
