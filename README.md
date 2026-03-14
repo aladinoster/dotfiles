@@ -18,12 +18,18 @@ This means **you only ever edit files in one place**: `~/.config/` (or equivalen
 
 ### Two repos, two workflows
 
-This dotfiles repo has **Neovim as a git submodule** (`aladinoster/config.nvim`), because it's also used independently on other machines. Everything else lives directly in this repo.
+This dotfiles repo uses **git submodules** for two things:
+
+- **Neovim** (`aladinoster/config.nvim`) — also used independently on other machines
+- **TPM** (`tmux-plugins/tpm`) — pinned at a known-good commit, installed alongside the rest of the dotfiles
+
+Everything else lives directly in this repo.
 
 | Config | Repo | Where to edit |
 |--------|------|---------------|
 | tmux, zsh, git, lazygit, etc. | `aladinoster/dotfiles` | `~/.config/<tool>/` |
 | Neovim | `aladinoster/config.nvim` | `~/.config/nvim/` |
+| TPM | `tmux-plugins/tpm` | submodule, don't edit directly |
 
 ### Pushing changes
 
@@ -72,7 +78,7 @@ git push
 ```bash
 cd ~/dotfiles
 git pull
-git submodule update --init --recursive   # also pull latest nvim
+git submodule update --init --recursive   # also pulls nvim + tpm
 ```
 
 ### Adding a new tool config
@@ -158,10 +164,13 @@ exec zsh
 
 ## Tmux plugins
 
-After linking configs, install [TPM](https://github.com/tmux-plugins/tpm) plugins:
+TPM is included as a git submodule at `.config/tmux/plugins/tpm` and is initialized automatically by `install.sh` via `git submodule update --init --recursive`. No manual clone needed.
+
+tmux 3.1+ loads `~/.config/tmux/tmux.conf` natively (XDG), so no `~/.tmux.conf` is required.
+
+After running `install.sh`, open tmux and install plugins:
 
 ```bash
-# TPM is auto-installed by install.sh, then inside tmux:
 <prefix> + I   # Install plugins
 <prefix> + U   # Update plugins
 ```
@@ -207,8 +216,11 @@ dotfiles/
 ├── install.sh       # Symlink setup
 └── .config/
     ├── git/
-    ├── nvim/
+    ├── nvim/            ← submodule (aladinoster/config.nvim)
     ├── tmux/
+    │   ├── tmux.conf
+    │   └── plugins/
+    │       └── tpm/     ← submodule (tmux-plugins/tpm)
     ├── zsh/
     ├── lazygit/
     ├── marimo/

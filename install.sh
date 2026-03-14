@@ -30,13 +30,6 @@ else
   echo "Linked: ~/.config → $DOTFILES/.config"
 fi
 
-# ── Tmux Plugin Manager ───────────────────────────────────────────────────────
-TPM_DIR="$HOME/.config/tmux/plugins/tpm"
-if [ ! -d "$TPM_DIR" ]; then
-  echo "Installing TPM..."
-  git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
-fi
-
 echo ""
 echo "Done! Next steps:"
 echo "  1. Run brew.sh to install packages"
