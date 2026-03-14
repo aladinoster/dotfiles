@@ -2,6 +2,81 @@
 
 macOS developer configuration files following the [XDG Base Directory](https://specifications.freedesktop.org/basedir-spec/latest/) specification.
 
+---
+
+## How this works (read this first)
+
+### Where do your config files actually live?
+
+After running `install.sh`, `~/.config` becomes a symlink pointing to `~/dotfiles/.config`:
+
+```
+~/.config  →  ~/dotfiles/.config   (symlink)
+```
+
+This means **you only ever edit files in one place**: `~/.config/` (or equivalently `~/dotfiles/.config/` — they are the same directory). Any edit is automatically inside the git repo.
+
+### Two repos, two workflows
+
+This dotfiles repo has **Neovim as a git submodule** (`aladinoster/config.nvim`), because it's also used independently on other machines. Everything else lives directly in this repo.
+
+| Config | Repo | Where to edit |
+|--------|------|---------------|
+| tmux, zsh, git, lazygit, etc. | `aladinoster/dotfiles` | `~/.config/<tool>/` |
+| Neovim | `aladinoster/config.nvim` | `~/.config/nvim/` |
+
+### Pushing changes
+
+**Non-nvim configs** (tmux, zsh, brew.sh, etc.):
+```bash
+cd ~/dotfiles
+git add -A
+git commit -m "update tmux config"
+git push
+```
+
+**Neovim config** — two steps (push nvim, then update the pointer in dotfiles):
+```bash
+# Step 1: push nvim changes to config.nvim
+cd ~/.config/nvim
+git add -A && git commit -m "add plugin xyz" && git push
+
+# Step 2: record the new nvim commit in dotfiles
+cd ~/dotfiles
+git add .config/nvim
+git commit -m "chore: bump nvim submodule"
+git push
+```
+
+Or use the `nvim-push` shell function (defined in `config.d/tools.zsh`) to do both in one shot:
+```bash
+nvim-push "add plugin xyz"
+```
+
+### Syncing Neovim from another machine
+
+If you made nvim changes on your other laptop and pushed them to `config.nvim`:
+```bash
+# Pull the latest nvim commits into this machine's submodule
+cd ~/dotfiles
+git submodule update --remote .config/nvim
+
+# Record the updated pointer
+git add .config/nvim
+git commit -m "chore: sync nvim from other machine"
+git push
+```
+
+### Pulling dotfiles updates on another machine
+
+```bash
+cd ~/dotfiles
+git pull
+git submodule update --init --recursive   # also pull latest nvim
+```
+
+---
+
 ## What's included
 
 | Tool | Location | Description |

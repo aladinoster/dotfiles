@@ -1,0 +1,19 @@
+# App-generated directories (not tracked)
+configstore/
+dask/
+exercism/
+fish/
+github-copilot/
+iterm2/
+nvim.bak/
+python_keyring/
+startup.log
+.DS_Store
+.zcompdump*
+.claude/
+
+# Zed runtime data (settings/keymap tracked separately if added)
+zed/conversations/
+zed/embeddings/
+zed/themes/
+zed/prompts/

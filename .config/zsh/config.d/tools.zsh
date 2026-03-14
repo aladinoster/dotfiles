@@ -19,3 +19,24 @@ fcd() {
   fi
 }
 
+# ── Dotfiles helpers ──────────────────────────────────────────────────────────
+
+# Push nvim changes to config.nvim AND bump the submodule pointer in dotfiles
+# Usage: nvim-push "optional commit message"
+nvim-push() {
+  local msg="${1:-update nvim config}"
+  echo "→ Pushing nvim (config.nvim)..."
+  git -C "$HOME/.config/nvim" add -A \
+    && git -C "$HOME/.config/nvim" commit -m "$msg" \
+    && git -C "$HOME/.config/nvim" push \
+    || echo "  (nothing to commit or push failed)"
+  echo "→ Bumping submodule pointer in dotfiles..."
+  git -C "$HOME/dotfiles" add .config/nvim
+  if git -C "$HOME/dotfiles" diff --cached --quiet; then
+    echo "  Pointer already up to date."
+  else
+    git -C "$HOME/dotfiles" commit -m "chore: bump nvim submodule" \
+      && git -C "$HOME/dotfiles" push
+  fi
+}
+
