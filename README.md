@@ -75,6 +75,38 @@ git pull
 git submodule update --init --recursive   # also pull latest nvim
 ```
 
+### Adding a new tool config
+
+**XDG-compliant tool** (writes to `~/.config/newtool/`) — nothing to do, it's already inside the repo. Just start tracking it when ready:
+```bash
+# Ignore it (app-generated, don't want to track):
+echo "newtool/" >> ~/dotfiles/.config/.gitignore
+
+# Track it:
+cd ~/dotfiles
+git add .config/newtool/
+git commit -m "feat: add newtool config"
+git push origin HEAD:master
+```
+
+**Home-directory dotfile** (must live at `~/.something`) — put the file in `~/dotfiles/`, add a symlink line to `install.sh`, then link it manually once:
+```bash
+# 1. Move the file into dotfiles
+mv ~/.sometoolrc ~/dotfiles/.sometoolrc
+
+# 2. Add to install.sh (under "Home dotfiles" section):
+#    ln -sf "$DOTFILES/.sometoolrc" "$HOME/.sometoolrc"
+
+# 3. Create the symlink now (don't re-run full install.sh):
+ln -sf ~/dotfiles/.sometoolrc ~/.sometoolrc
+
+# 4. Commit
+cd ~/dotfiles
+git add .sometoolrc install.sh
+git commit -m "feat: track sometoolrc"
+git push origin HEAD:master
+```
+
 ---
 
 ## What's included
