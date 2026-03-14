@@ -1,0 +1,13 @@
+# Secrets & credentials
+.config/zsh/config.d/secrets.zsh
+.config/zsh/.zsh_history
+.config/zsh/.zcompdump*
+
+# Claude Code local settings
+**/.claude/settings.local.json
+
+# Compiled zsh files
+*.zwc
+
+# macOS
+.DS_Store

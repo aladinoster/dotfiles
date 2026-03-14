@@ -1,0 +1,23 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Andres Ladino
+	email = aladinoster@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	add-commit = !git add -A && git commit
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+[init]
+	defaultBranch = main
+[remote "origin"]
+	proxy = 
+[core]
+	editor = nvim
