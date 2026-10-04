@@ -6,6 +6,9 @@ set -e
 
 echo "Installing Homebrew packages..."
 
+# ── Taps ──────────────────────────────────────────────────────────────────────
+brew tap databricks/tap
+
 # ── Terminal & Shell ──────────────────────────────────────────────────────────
 brew install zsh
 brew install zsh-autosuggestions
@@ -27,6 +30,8 @@ brew install glow          # Markdown terminal reader (used in fzf previews)
 brew install tree
 brew install htop
 brew install neovim
+brew install tree-sitter   # Parser CLI (nvim-treesitter)
+brew install cmake
 brew install just          # Command runner (justfile)
 brew install hugo
 
@@ -36,6 +41,14 @@ brew install uv            # Fast Python package manager
 brew install go
 brew install lua
 brew install python@3.12
+brew install julia
+
+# ── Data & Docs ──────────────────────────────────────────────────────────────
+brew install databricks/tap/databricks
+brew install libpq          # Postgres client (psql)
+brew install sphinx-doc
+brew install ghostscript
+brew install hunspell       # Spell checking
 
 # ── AI Tools ─────────────────────────────────────────────────────────────────
 brew install gemini-cli
@@ -63,7 +76,6 @@ brew install --cask zotero
 # brew install --cask miniconda
 
 # ── Optional Tools ────────────────────────────────────────────────────────────
-# brew install --cask julia
 # brew install --cask mactex
 
 echo "Done! Restart your terminal."
