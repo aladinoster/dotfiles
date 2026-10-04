@@ -1,3 +1,7 @@
+# tmux plugins (managed by tpm, not tracked directly)
+.config/tmux/plugins/*
+!.config/tmux/plugins/tpm
+
 # Secrets & credentials
 .config/zsh/config.d/secrets.zsh
 .config/zsh/.zsh_history
@@ -11,3 +15,14 @@
 
 # macOS
 .DS_Store
+
+# Homebrew runtime state (track a Brewfile instead)
+.config/homebrew/
+
+# Zed: track settings only, not local state
+.config/zed/conversations/
+.config/zed/prompts/
+
+# Stray archives / downloads
+*.tar.gz
+*.zip
